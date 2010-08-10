@@ -21,6 +21,7 @@ before "deploy:restart", "deploy:migrate"
 
 after "deploy:setup", "alchemy:create_shared_folders"
 after "deploy:symlink", "alchemy:symlink_folders"
+after "deploy:symlink", "alchemy:database_yml"
 
 namespace :alchemy do
 
@@ -33,21 +34,13 @@ namespace :alchemy do
   
   desc "Sets the symlinks for uploads and pictures cache folder"
   task :symlink_folders, :roles => :app do
-    run "rm -rf #{current_path}/uploads/*"
-    run "ln -nfs #{shared_path}/uploads/pictures/ #{current_path}/uploads/pictures"
-    run "ln -nfs #{shared_path}/uploads/attachments/ #{current_path}/uploads/attachments"
-    run "rm -rf #{current_path}/public/pictures"
-    run "ln -nfs #{shared_path}/cache/pictures/ #{current_path}/public/pictures"
-    run "ln -nfs #{shared_path}/config/database.yml #{current_path}/config/database.yml"
+    run "ln -nfs #{shared_path}/uploads #{current_path}/"
+    run "ln -nfs #{shared_path}/cache/pictures #{current_path}/public/"
   end
   
-  desc "Copies local cache to shared cache folder"
-  task :copy_cache, :roles => :app do
-    run "mkdir -p #{shared_path}/cache"
-    run "mkdir -p #{shared_path}/cache/pictures"
-    run "cp -R #{current_path}/public/pictures/* #{shared_path}/cache/pictures/"
-    run "rm -rf #{current_path}/public/pictures"
-    run "ln -nfs #{shared_path}/cache/pictures #{current_path}/public/"
+  desc "Symlinks the database.yml file"
+  task :database_yml, :roles => :app do
+    run "ln -nfs #{shared_path}/config/database.yml #{current_path}/config/"
   end
   
   @datestring = Time.now.strftime("%Y_%m_%d_%H_%M_%S")
