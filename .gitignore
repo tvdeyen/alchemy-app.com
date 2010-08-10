@@ -1,0 +1,5 @@
+index/*
+log/*
+tmp/*
+public/plugin_assets/
+config/database.yml
