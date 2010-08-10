@@ -1,9 +1,9 @@
 # set the applicationname here
 set :application, "alchemy-app.com"
 
-set :user, { Capistrano::CLI.ui.ask("Type in the ssh username: ") }
-set :password, { Capistrano::CLI.password_prompt("Type in the password for #{user}: ") }
-
+set(:user) { Capistrano::CLI.ui.ask("Type in the ssh username: ") }
+set(:password) { Capistrano::CLI.password_prompt("Type in the password for #{user}: ") }
+set :use_sudo, false
 set :scm, :git
 set :repository, "git://github.com/tvdeyen/alchemy-app.com.git"
 
