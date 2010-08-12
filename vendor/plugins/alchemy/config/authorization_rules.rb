@@ -69,7 +69,7 @@ privileges do
   end
   
   privilege :manage_picture_essences, :admin_essence_pictures do
-    includes :manage, :save_link, :assign
+    includes :manage, :save_link, :assign, :crop
   end
   
   privilege :manage_file_essences, :admin_essence_files do

@@ -52,7 +52,7 @@ ActionController::Routing::Routes.draw do |map|
         :download => :get
       }
     )
-    admin.resources :essence_pictures
+    admin.resources :essence_pictures, :member => {:crop => :get}, :except => [:show, :new, :create]
     admin.resources :essence_files
   end
   map.resources :user_sessions

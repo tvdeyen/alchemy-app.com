@@ -1,18 +1,14 @@
-<div class="picture_tool_button">
-	<%= link_to_confirmation_window(
-		"",
-		_("confirm_to_delete_image"),
-		url_for(
-			:controller => 'essence_pictures',
-			:action => 'destroy',
-			:id => content,
-			:options => options
-		),
-		{
-			:title => _("delete_image"),
-			:class => "picture_delete"
-		}
-	) -%>
+<div class="picture_tool_button<%= options[:crop] ? '' : ' disabled' %>">
+    <%- if options[:crop] -%>
+	<%= link_to_overlay_window(
+	    '',
+	    crop_admin_essence_picture_path(content.essence, :size => options[:image_size]),
+	    { :size => "fullscreen", :title => _('Edit Picturemask') },
+	    { :class => "edit_picture_mask", :title => _('Edit Picturemask') }
+	) %>
+	<%- else -%>
+	<a href="javascript:void(0)" class="edit_picture_mask"></a>
+	<%- end -%>
 </div>
 <div class="picture_tool_button">
 	<%= link_to_overlay_window("",

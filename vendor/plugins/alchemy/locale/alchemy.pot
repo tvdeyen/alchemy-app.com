@@ -7,7 +7,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: version 2.0\n"
-"POT-Creation-Date: 2010-07-29 19:19+0200\n"
+"POT-Creation-Date: 2010-08-12 15:55+0200\n"
 "PO-Revision-Date: 2010-03-19 18:25+0100\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "MIME-Version: 1.0\n"
@@ -81,6 +81,11 @@ msgstr ""
 msgid "Do you really want to delete this content?"
 msgstr ""
 
+#: app/views/essences/_essence_picture_tools.html.erb:6
+#: app/views/essences/_essence_picture_tools.html.erb:7
+msgid "Edit Picturemask"
+msgstr ""
+
 #: locale/model_attributes.rb:14
 msgid "Element"
 msgstr ""
@@ -149,7 +154,7 @@ msgstr ""
 msgid "Image: '%{name}' deleted successfully"
 msgstr ""
 
-#: app/views/essences/_essence_picture_editor.html.erb:6
+#: app/views/essences/_essence_picture_editor.html.erb:22
 msgid "Mising Image"
 msgstr ""
 
@@ -398,11 +403,11 @@ msgstr ""
 msgid "User: '%{name}' created"
 msgstr ""
 
-#: app/controllers/admin/users_controller.rb:65
+#: app/controllers/admin/users_controller.rb:66
 msgid "User: '%{name}' deleted"
 msgstr ""
 
-#: app/controllers/admin/users_controller.rb:57
+#: app/controllers/admin/users_controller.rb:58
 msgid "User: '%{name}' updated"
 msgstr ""
 
@@ -579,7 +584,7 @@ msgstr ""
 msgid "confirm_to_delete_file"
 msgstr ""
 
-#: app/views/essences/_essence_picture_tools.html.erb:4
+#: app/views/essences/_essence_picture_editor.html.erb:5
 msgid "confirm_to_delete_image"
 msgstr ""
 
@@ -670,7 +675,7 @@ msgstr ""
 msgid "delete_file"
 msgstr ""
 
-#: app/views/essences/_essence_picture_tools.html.erb:12
+#: app/views/essences/_essence_picture_editor.html.erb:13
 msgid "delete_image"
 msgstr ""
 
@@ -695,7 +700,7 @@ msgstr ""
 msgid "download_file_'%{filename}'"
 msgstr ""
 
-#: app/views/essences/_essence_picture_editor.html.erb:9
+#: app/views/essences/_essence_picture_editor.html.erb:25
 msgid "drag_to_sort"
 msgstr ""
 
@@ -704,13 +709,13 @@ msgstr ""
 msgid "edit_file_properties"
 msgstr ""
 
+#: app/views/essences/_essence_picture_tools.html.erb:57
 #: app/views/essences/_essence_picture_tools.html.erb:61
-#: app/views/essences/_essence_picture_tools.html.erb:65
 msgid "edit_image_properties"
 msgstr ""
 
 #: app/views/admin/pages/_layoutpage.html.erb:15
-#: app/views/admin/pages/_page.html.erb:71
+#: app/views/admin/pages/_page.html.erb:74
 #: app/views/admin/pages/_sitemap.html.erb:65
 msgid "edit_page"
 msgstr ""
@@ -767,6 +772,10 @@ msgstr ""
 
 #: app/views/admin/pages/_external_link.html.erb:3
 msgid "enter_external_link"
+msgstr ""
+
+#: app/views/admin/essence_pictures/crop.html.erb:9
+msgid "explain cropping"
 msgstr ""
 
 #: app/views/admin/pages/edit.html.erb:37
@@ -836,12 +845,8 @@ msgstr ""
 msgid "image_caption"
 msgstr ""
 
-#: app/views/essences/_essence_picture_editor.html.erb:18
+#: app/views/essences/_essence_picture_editor.html.erb:34
 msgid "image_name"
-msgstr ""
-
-#: app/views/admin/essence_pictures/edit.html.erb:29
-msgid "image_size"
 msgstr ""
 
 #: app/views/admin/essence_pictures/edit.html.erb:14
@@ -879,7 +884,7 @@ msgstr ""
 msgid "left"
 msgstr ""
 
-#: app/views/essences/_essence_picture_tools.html.erb:41
+#: app/views/essences/_essence_picture_tools.html.erb:37
 msgid "link_image"
 msgstr ""
 
@@ -1186,7 +1191,8 @@ msgstr ""
 #: app/views/admin/essence_files/edit.html.erb:40
 #: app/views/admin/essence_files/edit.html.erb:68
 #: app/views/admin/essence_files/edit.html.erb:92
-#: app/views/admin/essence_pictures/edit.html.erb:35
+#: app/views/admin/essence_pictures/crop.html.erb:15
+#: app/views/admin/essence_pictures/edit.html.erb:29
 #: app/views/admin/pages/configure.html.erb:66
 #: app/views/admin/pages/configure_external.html.erb:40
 #: app/views/admin/pictures/_picture.html.erb:45
@@ -1195,7 +1201,7 @@ msgstr ""
 msgid "save"
 msgstr ""
 
-#: app/controllers/admin/essence_pictures_controller.rb:57
+#: app/controllers/admin/essence_pictures_controller.rb:73
 msgid "saved_link"
 msgstr ""
 
@@ -1256,8 +1262,8 @@ msgstr ""
 msgid "successfully_saved_element_position"
 msgstr ""
 
+#: app/views/essences/_essence_picture_tools.html.erb:24
 #: app/views/essences/_essence_picture_tools.html.erb:28
-#: app/views/essences/_essence_picture_tools.html.erb:32
 msgid "swap_image"
 msgstr ""
 
@@ -1280,7 +1286,7 @@ msgstr ""
 msgid "unknown"
 msgstr ""
 
-#: app/views/essences/_essence_picture_tools.html.erb:51
+#: app/views/essences/_essence_picture_tools.html.erb:47
 msgid "unlink"
 msgstr ""
 

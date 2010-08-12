@@ -1,8 +1,3 @@
-/* @override 
-	http://localhost:3000/plugin_assets/alchemy/stylesheets/alchemy.css
-	http://0.0.0.0:3000/plugin_assets/alchemy/stylesheets/alchemy.css
-*/
-
 html {
 	height: 100%;
 }
@@ -541,8 +536,8 @@ div#page {
 
 .picture_tool_delete a {
 	display: block;
-	width: 18px;
-	height: 18px;
+	width: 16px;
+	height: 16px;
 	background: url(../images/icons/remove.png) no-repeat 1px 0;
 	cursor: pointer;
 }
@@ -563,7 +558,7 @@ a.hide_element_selector {
 	background: url(../images/gui/arrow_green_left.gif) no-repeat -1px 1px;
 }
 
-#dashboard div.dashboard_tip {
+div.tip {
 	background-color: #eff8d0;
 	border: 1px solid #cce21c;
 	padding: 8px;
