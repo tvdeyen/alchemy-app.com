@@ -18,4 +18,5 @@ Rails::Initializer.run do |config|
   config.i18n.load_path += Dir[Rails.root.join('vendor/plugins/alchemy/config', 'locales', '*.{rb,yml}')]
   config.i18n.default_locale = :de
   config.active_record.default_timezone = :berlin
+  config.action_controller.session = { :key => "_alchemy_session", :secret => "2f1eb8a264b7dd21a1d459c744afe27154b5544e15f861d23078301b8895e194b601103797db880f0de15d73fe5d196e8c372b9b0f5b81b786e0d906633a9fc2" }
 end
