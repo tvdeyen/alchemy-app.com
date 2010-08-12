@@ -10,6 +10,15 @@
   - name: text
     type: EssenceRichtext
 
+- name: intro_image_text
+  display_name: Intro-Artikel
+  - name: headline
+    type: EssenceText
+  - name: image
+    type: EssencePicture
+  - name: text
+    type: EssenceRichtext
+  
 - name: text
   display_name: Text
   contents:
