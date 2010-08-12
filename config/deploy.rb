@@ -6,6 +6,7 @@ set(:password) { Capistrano::CLI.password_prompt("Type in the password for #{use
 set :use_sudo, false
 set :scm, :git
 set :repository, "git://github.com/tvdeyen/alchemy-app.com.git"
+set :port, 12312
 
 set :deploy_via, :remote_cache
 set :copy_exclude, [".svn", ".DS_Store"]
