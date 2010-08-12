@@ -12,6 +12,7 @@
 
 - name: intro_image_text
   display_name: Intro-Artikel
+  contents:
   - name: headline
     type: EssenceText
   - name: image
