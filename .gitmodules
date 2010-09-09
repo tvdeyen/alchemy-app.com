@@ -1,0 +1,3 @@
+[submodule "vendor/plugins/alchemy"]
+	path = vendor/plugins/alchemy
+	url = git://github.com/tvdeyen/alchemy.git
