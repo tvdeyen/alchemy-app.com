@@ -6,15 +6,15 @@
 		<tr>
 			<td class="label">
 				<label for="mail_data_subject">
-					<%= t('contactform_labels.salutation') %>
+					<%= t('contactform.labels.salutation') %>
 				</label>
 			</td>
 			<td class="field" colspan="3">
 				<%= f.select(
 					:salutation,
 					[
-						[t('contactform_labels.mr')],
-						[t('contactform_labels.mrs')]
+						[t('contactform.labels.mr')],
+						[t('contactform.labels.mrs')]
 					],
 					:class => "select"
 				) %>
@@ -23,7 +23,7 @@
 		<tr>
 			<td class="label">
 				<label for="mail_data_email">
-					<%= t('contactform_labels.firstname') %>
+					<%= t('contactform.labels.firstname') %>
 				</label>
 			</td>
 			<td class="field" colspan="3">
@@ -33,7 +33,7 @@
 		<tr>
 			<td class="label">
 				<label for="mail_data_telephone">
-					<%= t('contactform_labels.lastname') %>
+					<%= t('contactform.labels.lastname') %>
 				</label><small>*</small>
 			</td>
 			<td class="field" colspan="3">
@@ -43,7 +43,7 @@
 		<tr>
 			<td class="label">
 				<label for="mail_data_strasse">
-					<%= t('contactform_labels.strasse') %>
+					<%= t('contactform.labels.strasse') %>
 				</label>
 			</td>
 			<td class="field" colspan="3">
@@ -53,7 +53,7 @@
 		<tr>
 			<td class="label">
 				<label for="mail_data_plz">
-					<%= t('contactform_labels.plz') %>
+					<%= t('contactform.labels.plz') %>
 				</label>
 			</td>
 			<td class="field short">
@@ -61,7 +61,7 @@
 			</td>
 			<td class="label short">
 				<label for="mail_data_ort">
-					<%= t('contactform_labels.ort') %>
+					<%= t('contactform.labels.ort') %>
 				</label>
 			</td>
 			<td class="field">
@@ -71,7 +71,7 @@
 		<tr>
 			<td class="label">
 				<label for="mail_data_phone">
-					<%= t('contactform_labels.phone') %>
+					<%= t('contactform.labels.phone') %>
 				</label>
 			</td>
 			<td class="field" colspan="3">
@@ -81,7 +81,7 @@
 		<tr>
 			<td class="label">
 				<label for="mail_data_email">
-					<%= t('contactform_labels.email') %>
+					<%= t('contactform.labels.email') %>
 				</label><small>*</small>
 			</td>
 			<td class="field" colspan="3">
@@ -91,7 +91,7 @@
 		<tr>
 			<td class="label">
 				<label for="mail_data_message">
-					<%= t('contactform_labels.message') %>
+					<%= t('contactform.labels.message') %>
 				</label>
 			</td>
 			<td class="field" colspan="3">
@@ -100,9 +100,9 @@
 		</tr>
 	</table>
 	<p class="right">
-		<%= f.submit t('contactform_labels.send'), :name => nil, :class => 'button' %>
+		<%= f.submit t('contactform.labels.send'), :name => nil, :class => 'button' %>
 	</p>
 <% end %>
 <div id="mandatory_notice">
-	<small>* <%= t('contactform_labels.mandatory_fields') %></small>
+	<small>* <%= t('contactform.labels.mandatory_fields') %></small>
 </div>

@@ -25,6 +25,6 @@ de:
       message: 'Nachricht'
       mandatory_fields: 'notwendige Felder'
       success_page: 'Folgeseite'
-    messages:
+    validations:
       enter_name: Bitte geben Sie Ihren Namen an
       enter_email: Bitte geben Sie Ihre Email Adresse an
