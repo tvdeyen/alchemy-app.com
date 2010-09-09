@@ -1,6 +1,8 @@
 index/*
 log/*
 tmp/*
-public/plugin_assets/
 config/database.yml
 uploads/*
+public/images/alchemy/
+public/javascripts/alchemy/
+public/stylesheets/alchemy/
