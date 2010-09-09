@@ -34,26 +34,17 @@
   :form_layout_name: contact
   :forward_to_page: false
   :fields:
-    - - :salutation:
-      - :string
-    - - :firstname:
-      - :string
-    - - :lastname:
-      - :string
-    - - :address:
-      - :string
-    - - :zip:
-      - :string
-    - - :city:
-      - :string
-    - - :phone:
-      - :string
-    - - :email:
-      - :string
-    - - :message:
-      - :text
+    - salutation: string
+    - firstname: string
+    - lastname: string
+    - address: string
+    - zip: :string
+    - city: string
+    - phone: string
+    - email: string
+    - message: text
   :validate_fields:
     :lastname:
-      :message: Bitte geben Sie Ihren Namen an
+      :message: enter_name
     :email:
-      :message: Bitte geben Sie Ihre Email Adresse an
+      :message: enter_email

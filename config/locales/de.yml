@@ -9,18 +9,22 @@ de:
     mail_to: 'Empfänger (e-Mail)'
     subject: 'Betreff'
 
-  contactform_labels:
-    salutation: 'Anrede'
-    mr: 'Herr'
-    mrs: 'Frau'
-    firstname: 'Vorname'
-    lastname: 'Nachname'
-    strasse: 'Straße'
-    plz: 'PLZ'
-    ort: 'Ort'
-    phone: 'Telefon'
-    email: 'Email'
-    send: 'abschicken'
-    message: 'Nachricht'
-    mandatory_fields: 'notwendige Felder'
-    success_page: 'Folgeseite'
+  contactform:
+    labels:
+      salutation: 'Anrede'
+      mr: 'Herr'
+      mrs: 'Frau'
+      firstname: 'Vorname'
+      lastname: 'Nachname'
+      strasse: 'Straße'
+      plz: 'PLZ'
+      ort: 'Ort'
+      phone: 'Telefon'
+      email: 'Email'
+      send: 'abschicken'
+      message: 'Nachricht'
+      mandatory_fields: 'notwendige Felder'
+      success_page: 'Folgeseite'
+    messages:
+      enter_name: Bitte geben Sie Ihren Namen an
+      enter_email: Bitte geben Sie Ihre Email Adresse an
