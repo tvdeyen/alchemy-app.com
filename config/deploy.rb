@@ -20,8 +20,8 @@ before "deploy:restart",        "alchemy:assets:copy"
 before "deploy:restart",        "deploy:migrate"
 
 after "deploy:setup",           "deploy:db:setup"   unless fetch(:skip_db_setup, false)
-after "deploy:setup",           "alchemy:create_shared_folders"
-after "deploy:symlink",         "alchemy:symlink_folders"
+after "deploy:setup",           "alchemy:shared_folders:create"
+after "deploy:symlink",         "alchemy:shared_folders:symlink"
 after "deploy:finalize_update", "deploy:db:symlink"
 
 # Tasks
@@ -99,12 +99,8 @@ namespace :alchemy do
   end
   
   namespace :db do
-    namespace :migrate do
-
-      task :alchemy, :roles => :app, :except => { :no_release => true } do
-        run "cd #{current_path} && RAILS_ENV=production rake db:migrate:alchemy"
-      end
-
+    task :migrate, :roles => :app, :except => { :no_release => true } do
+      run "cd #{current_path} && RAILS_ENV=production rake db:migrate:alchemy"
     end
   end
 end
